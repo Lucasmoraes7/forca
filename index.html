@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Forca</h1>
+    </header>
+    <div id="game-container">
+        <h1>Tema: Frutas</h1>
+        <div id="word-display"></div>
+        <div id="chances-display"></div>
+        <input type="text" id="guess-input" placeholder="Escolha uma letra">
+        <div id="wrong-letters-display"></div> <!-- Adicione esta div para exibir letras incorretas -->
+        <button id="guess-button" onclick="makeGuess()">Adivinhar</button>
+        <button id="restart-button" onclick="restartGame()" style="display: none; margin: 0.5rem auto;">Reiniciar Jogo</button>
+        <div id="result-display"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
